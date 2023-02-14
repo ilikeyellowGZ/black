@@ -1,0 +1,23 @@
+button {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+button {
+    color: green;
+    background-color: black;
+    margin:  10px 30px;
+    padding: 20px;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+
+}
+
+button:hover {
+    background-color: green;
+    color: black;
+    transform: translateY(-5px);
+
+}
