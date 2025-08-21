@@ -1,13 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>im trying something new</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <center><button>submit</button></center>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trademark Tracking - Print and Augmented Reality</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=100&fit=crop" alt="Logo" class="logo-image">
+                </div>
+                <div class="nav-content">
+                    <div class="nav-links">
+                        <a href="#work" class="nav-link">Our Work</a>
+                        <a href="#about" class="nav-link">About Us</a>
+                        <div class="nav-dropdown">
+                            <span class="nav-link">Services</span>
+                            <svg class="chevron-down" viewBox="0 0 24 24">
+                                <path d="M12.3977 15.6629C12.178 15.8826 11.8219 15.8826 11.6022 15.6629L5.86739 9.92804C5.64772 9.70837 5.64772 9.35227 5.86739 9.13259L6.13256 8.86739C6.35222 8.64772 6.70838 8.64772 6.92805 8.86739L12 13.9393L17.0719 8.86739C17.2916 8.64772 17.6477 8.64772 17.8674 8.86739L18.1326 9.13259C18.3522 9.35227 18.3522 9.70837 18.1326 9.92804L12.3977 15.6629Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="contact-button" type="button">Contact</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Bring Your Imagination to Life with Print and Augmented Reality</h1>
+            <p class="hero-description">We specialize in transforming ideas into stunning visuals. Our dedicated team combines creativity and technology to deliver exceptional results.</p>
+            <button class="see-how-button" type="button">
+                See How
+                <svg class="arrow-right" viewBox="0 0 24 24">
+                    <path d="M9.5 6L15.5 12L9.5 18" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="content-left">
+                    <h2 class="section-title">About Trademark Tracking</h2>
+                    <p class="section-description">We are an all youth owned forward-minded agency specializing in Graphic Design, Printing and Augmented-Reality. Our expertise gives us the ability to fuse these specialties, transforming static visuals into engaging experiences through the interactive nature of Augmented Reality. From eye-catching advertisements to educational resources, we elevate traditional Media to higher levels, innovating audience engagements in memorable ways.</p>
+                    <div class="button-group">
+                        <button class="see-more-button" type="button">See More</button>
+                        <button class="contact-outline-button" type="button">
+                            Contact
+                            <svg class="arrow-right" viewBox="0 0 24 24">
+                                <path d="M9.5 6L15.5 12L9.5 18" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="placeholder-image" aria-label="About image placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="work">
+        <div class="container">
+            <h2 class="projects-title">Explore Our Projects</h2>
+            
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="filter-button active" data-filter="printing" type="button">Printing</button>
+                <button class="filter-button" data-filter="design" type="button">Design</button>
+                <button class="filter-button" data-filter="ar" type="button">AR</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="projects-grid">
+                <div class="project-card" data-category="printing">
+                    <img src="https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=400&h=300&fit=crop" alt="Project 1" class="project-image" loading="lazy">
+                </div>
+                <div class="project-card" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Project 2" class="project-image" loading="lazy">
+                </div>
+                <div class="project-card" data-category="ar">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop" alt="Project 3" class="project-image" loading="lazy">
+                </div>
+                <div class="project-card" data-category="printing">
+                    <img src="https://images.unsplash.com/photo-1586281380614-7c7c3d3e6db4?w=400&h=300&fit=crop" alt="Project 4" class="project-image" loading="lazy">
+                </div>
+                <div class="project-card" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="Project 5" class="project-image" loading="lazy">
+                </div>
+                <div class="project-card" data-category="ar">
+                    <img src="https://images.unsplash.com/photo-1586281380949-5d4b64d19c37?w=400&h=300&fit=crop" alt="Project 6" class="project-image" loading="lazy">
+                </div>
+            </div>
+
+            <button class="start-project-button" type="button">Start a Project</button>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Discover Our Creative Excellence</h2>
+                <p class="cta-description">We're here to create innovative AR solutions that redefine how your brand connects with the world.</p>
+                <button class="cta-button" type="button">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=100&fit=crop" alt="Logo" class="footer-logo-image">
+                    </div>
+                    
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#services">Our Services</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                                <li><a href="#faq">FAQs</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Follow Us</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">YouTube</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Legal Info</h3>
+                            <ul class="footer-links">
+                                <li><a href="#privacy">Privacy Policy</a></li>
+                                <li><a href="#terms">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Contact Info</h3>
+                            <ul class="footer-links">
+                                <li><a href="mailto:info@trademarktracking.com">Email Us</a></li>
+                                <li><a href="tel:+1234567890">Call Us</a></li>
+                                <li><span>Office Hours</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-divider"></div>
+                    <div class="footer-credits">
+                        <div class="copyright">
+                            <span>© 2025 HeyyWebb. All rights reserved.</span>
+                            <a href="#privacy">Privacy Policy</a>
+                            <a href="#terms">Terms of Service</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                                    <path d="M22 12.3038C22 6.74719 17.5229 2.24268 12 2.24268C6.47715 2.24268 2 6.74719 2 12.3038C2 17.3255 5.65684 21.4879 10.4375 22.2427V15.2121H7.89844V12.3038H10.4375V10.0872C10.4375 7.56564 11.9305 6.1728 14.2146 6.1728C15.3088 6.1728 16.4531 6.36931 16.4531 6.36931V8.84529H15.1922C13.95 8.84529 13.5625 9.6209 13.5625 10.4166V12.3038H16.3359L15.8926 15.2121H13.5625V22.2427C18.3432 21.4879 22 17.3257 22 12.3038Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3.24268H8C5.23858 3.24268 3 5.48126 3 8.24268V16.2427C3 19.0041 5.23858 21.2427 8 21.2427H16C18.7614 21.2427 21 19.0041 21 16.2427V8.24268C21 5.48126 18.7614 3.24268 16 3.24268ZM19.25 16.2427C19.2445 18.0353 17.7926 19.4872 16 19.4927H8C6.20735 19.4872 4.75549 18.0353 4.75 16.2427V8.24268C4.75549 6.45003 6.20735 4.99817 8 4.99268H16C17.7926 4.99817 19.2445 6.45003 19.25 8.24268V16.2427ZM16.75 8.49268C17.3023 8.49268 17.75 8.04496 17.75 7.49268C17.75 6.9404 17.3023 6.49268 16.75 6.49268C16.1977 6.49268 15.75 6.9404 15.75 7.49268C15.75 8.04496 16.1977 8.49268 16.75 8.49268ZM12 7.74268C9.51472 7.74268 7.5 9.7574 7.5 12.2427C7.5 14.728 9.51472 16.7427 12 16.7427C14.4853 16.7427 16.5 14.728 16.5 12.2427C16.5027 11.0484 16.0294 9.90225 15.1849 9.05776C14.3404 8.21327 13.1943 7.74002 12 7.74268ZM9.25 12.2427C9.25 13.7615 10.4812 14.9927 12 14.9927C13.5188 14.9927 14.75 13.7615 14.75 12.2427C14.75 10.7239 13.5188 9.49268 12 9.49268C10.4812 9.49268 9.25 10.7239 9.25 12.2427Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="X">
+                                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                                    <path d="M17.1761 4.24268H19.9362L13.9061 11.0201L21 20.2427H15.4456L11.0951 14.6493L6.11723 20.2427H3.35544L9.80517 12.9935L3 4.24268H8.69545L12.6279 9.3553L17.1761 4.24268ZM16.2073 18.6181H17.7368L7.86441 5.78196H6.2232L16.2073 18.6181Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                                    <path d="M21.593 7.203C21.4791 6.7804 21.2565 6.395 20.9474 6.08517C20.6382 5.77533 20.2533 5.55186 19.831 5.437C18.265 5.007 12 5 12 5C12 5 5.736 4.993 4.169 5.404C3.74693 5.52415 3.36282 5.75078 3.05357 6.06213C2.74431 6.37349 2.52029 6.75912 2.403 7.182C1.99 8.748 1.986 11.996 1.986 11.996C1.986 11.996 1.982 15.26 2.392 16.81C2.622 17.667 3.297 18.344 4.155 18.575C5.737 19.005 11.985 19.012 11.985 19.012C11.985 19.012 18.25 19.019 19.816 18.609C20.2385 18.4943 20.6237 18.2714 20.9337 17.9622C21.2436 17.653 21.4674 17.2682 21.583 16.846C21.997 15.281 22 12.034 22 12.034C22 12.034 22.02 8.769 21.593 7.203ZM9.996 15.005L10.001 9.005L15.208 12.01L9.996 15.005Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
