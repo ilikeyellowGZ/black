@@ -44,32 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
         ctaContactButton.addEventListener('click', () => smoothScrollToHash('#contact'));
     }
 
-    // Category filtering
-    const filterButtons = Array.from(document.querySelectorAll('.filter-button'));
-    const projectCards = Array.from(document.querySelectorAll('.project-card'));
-
-    function applyFilter(category) {
-        projectCards.forEach((card) => {
-            const cardCategory = card.getAttribute('data-category');
-            const shouldShow = cardCategory === category;
-            card.classList.toggle('hidden', !shouldShow);
-        });
-    }
-
-    if (filterButtons.length && projectCards.length) {
-        filterButtons.forEach((button) => {
-            button.addEventListener('click', () => {
-                const selectedCategory = button.getAttribute('data-filter');
-                filterButtons.forEach((b) => b.classList.remove('active'));
-                button.classList.add('active');
-                applyFilter(selectedCategory);
-            });
-        });
-
-        // Initialize with the active button's category
-        const initiallyActive = document.querySelector('.filter-button.active');
-        if (initiallyActive) {
-            applyFilter(initiallyActive.getAttribute('data-filter'));
-        }
-    }
+    // No category filtering: buttons are decorative only on all breakpoints
 });
