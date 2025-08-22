@@ -698,6 +698,13 @@ body {
         align-items: flex-start;
         gap: 0.5rem;
     }
+
+    .category-filters {
+        display: none;
+    }
+    .category-buttons-mobile {
+        display: flex;
+    }
 }
 
 @media (max-width: 480px) {
